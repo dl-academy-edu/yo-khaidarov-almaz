@@ -4,137 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Crimson+Text:ital,wght@1,700&family=Lato:wght@700&family=Montserrat:wght@200;300;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/normalise.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/toys.css">
+    <link rel="stylesheet" href="/css/contact.css">
     <title>Contact Us</title>
 </head>
 <body>
     <header class="header">
-        <a href="/html/main.html"><img src="/img/DLK.png" alt="logo"></a>
-        <ul class="header__list">
-            <li class="header__list-item"><a href="/html/blog.html" >Blog</a></li>
-            <li class="header__list-item"><a href="/html/catalog.html">Catalog</a></li>
-            <li class="header__list-item"><a href="/html/toys.html">About us</a></li>
-        </ul>
-        <ul class="header__contact">
-            <li><button><img src="/icon/search.svg" alt="search"></button></li>
-            <li class="header__contact-iten "><a href="#" class="btn">Contact Us</a></li>
-        </ul>
+        <div class="container header">
+            <a href="#" class="header__logo">
+                <div class="header__logo-img">
+                    <a href="./index.html"><img src="/img/DLK.png" alt=""></a>
+                </div>
+               </a>
+                <ul class="header__list">
+                    <li><a href="./blog.html" class="header__list-item">BLOG</a></li>
+                    <li><a href="./catalog.html" class="header__list-item">CATALOG</a></li>
+                    <li><a href="./toys.html" class="header__list-item">ABOUT US</a></li>
+                   </ul>
+                <ul class="header__contact">
+                    <li><img class="header__contact-img" src="/icon/search.svg" alt=""></li>
+                    <li><a href="/html/contactus.html" class="header__text">CONTACT US</a></li>
+                   </ul>
+        </div>
     </header>
     <main>
-        <section>
-            <h1>Contact Us </h1>
-            <form action="#">
-                <div>
-                    <div>
-                        <label for="id= input-name">Name</label>
-                        <input type="text" id="input-name">
+        <section class="blog">
+            <div class="container">
+                <h1 class="blog__title">Contact Us</h1>
+                    <ul class="blog__home">
+                        <li class="blog__home-it">Home</li>
+                        <li><img class="arrow__blog" src="/icon/arowblack.svg" alt=""></li>
+                        <li class="blog__home-item">Contact Us</li>
+                    </ul>                
+            </div>
+        </section>
+        <div class="container contact__wrap">
+            <section class="section__form"> 
+                <div class="container__form">
+                 <div class="popup__form"> 
+                  <form action="#" method="post">
+                   <div class="name">
+                    <label for="name">Name</label>
+                    <input class="input-name" type="text" id="name" name="user-name">
+                   </div>
+                   <div class="tel-email">
+                    <div class="tel">
+                     <label class="label-tel" for="phone">Phone</label>
+                     <input class="input-tel" type="tel" id="phone" name="user-phone">
                     </div>
-                    <div>
-                    <label for="id= input-phone">Phone</label>
-                    <input type="tel" id="input-phone">
+                    <div class="email">
+                     <label class="label-email" for="email">Email</label>
+                     <input class="input-email" type="email" id="email" name="user-email">
+                    </div>
+                   </div>
+                   <div class="mess">
+                    <label class="label-mess" for="message">Message</label>
+                    <textarea class="textarea-mess" id="message" name="user-message"></textarea> 
+                   </div>
+                   <div class="check">
+                    <input class="input-check" type="checkbox" checked id="consent" name="consent">
+                    <label class="label-check colouring__item" for="consent">By clicking on the button, you consent to the processing of your personal data</label>
+                   </div>
+                   <button class="button__form" type="button">SUBMIT</button>
+                  </form>
+                 </div>
                 </div>
-                <div>
-                    <label for="id= input-Email">Email</label>
-                    <input type="email" id="input-E-mail">
-                </div>
-                <div>
-                    <label for="id= input-Message">Message</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <fieldset>
-                    <ol>
-                        <li>
-                            <input type="checkbox" id="input-By clicking on the button, you consent to the processing of your personal data">
-                            <label for="input-By clicking on the button, you consent to the processing of your personal data">By clicking on the button, you consent to the processing of your personal data</label>
-                        </li>
-                    </ol>
-                </fieldset>
-                <button type="submit">submit</button>
-            </form>
-        </section>
-        <section>
-            <p>
-                Our support team are on-hand to assist with any issues you are experiencing.
-
-                Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.
-
-                An expert is waiting to help you!
-            </p>
-        </section>
+            </section>
+            <div class="text__contact">
+                <p class="our">Our support team are on-hand to assist with any issues you are experiencing.</p>
+                <p class="please">Please use the form to contact us with your needs. Send us a message and we'll respond as soon as possible.</p>
+                <p class="an">An expert is waiting to help you!</p>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer_aside">
-                <div class="navigation"></div>
-            <p class="navigation_text">Navigation</p>
-            <div class="navigation_line"></div>
-            <ul class="footer_info">
-            <li class="footer_info-item"><a href="#">About us</a></li>
-            <li class="footer_info-item"><a href="#">Blog</a></li>
-            <li class="footer_info-item"><a href="#">Design Services</a></li>
-            <li class="footer_info-item"><a href="#">Featured on</a></li>
-            <li class="footer_info-item"><a href="#">2018 Holiday Catalog</a></li>
-            <li class="footer_info-item"><a href="#">Shop By Designer</a></li>
-            </ul>
-            </div>
-            <div class="customer">
-           <div class="customer_text">Customer information</div>
-           <div class="customer_line"></div>
-            <ul class="footer_customer">
-            <li class="footer_customer-item"><a href="#">Contact Us</a></li>
-            <li class="footer_customer-item"><a href="#">Sale Exclusions</a></li>
-            <li class="footer_customer-item"><a href="#">Shipping & Returns</a></li>
-            <li class="footer_customer-item"><a href="#">Terms & Conditions</a></li>
-            <li class="footer_customer-item"><a href="#">Privacy Policy</a></li>
-            <li class="footer_customer-item"><a href="#">Search</a></li>
-            </ul>
-            </div>
-            <div class="connect_footer">
-                <p class="connect-text">Connect</p>
-            <form action="#" method="post" class="form_elements"></form>
-            <div class="connect">
-                <div class="connect_text"Connect></div>
-                <div class="connect_line"></div>
-                <div class="footer_mail">
-                    <input class="footer_input" type="text" placeholder="Email">
-                    <button class="footer_button">Join</button>
+            <div class="footer__aside">
+                <div class="navigation">
+                    <p class="navigation__text">Navigation</p>
+                    <div class="navigation__line"></div>
+                        <ul class="footer__info">
+                            <li class="footer__info-item">About Us</li>
+                            <li class="footer__info-item">Blog</li>
+                            <li class="footer__info-item">Design Services</li>
+                            <li class="footer__info-item">Featured On</li>
+                            <li class="footer__info-item">2018 Holiday Catalog</li>
+                            <li class="footer__info-item">Shop By Designer</li>
+                        </ul>
                 </div>
-            <ul class="footer_links">
-                <li class="footer_img-item"><a href="#"><img src="/icon/Facebook.svg" alt="faceebok"></a></li>
-                <li class="footer_img-item"><a href="#"><img src="/icon/Twitter.svg" alt="twitter"></a></li>
-                <li class="footer_img-item"><a href="#"><img src="/icon/Pinterest.svg" alt="pinterest"></a></li>
-                <li class="footer_img-item"><a href="#"><img src="/icon/Instagram.svg" alt="instagram"></a></li>
-            </ul>
-            </div>
-            </div>
-        </div>
-        <div class="line_footer"></div>
-            <div class="footer_box">
-                <div class="company">
-                    <p class="company_text">Company Rating</p>
-                    <fieldset class="rating">
-                        <legend class="rating_caption"></legend>
-                        <div class="rating-mini">
-                            <div class="rating-area">
-                                <input type="radio" id="star-5" name="rating" value="5">
-                                <label for="star-5" title="Оценка-5"></label>
-                                <input type="radio" id="star-4" name="rating" value="4">
-                                <label for="star-4" title="Оценка-4"></label>
-                                <input type="radio" id="star-3" name="rating" value="3">
-                                <label for="star-3" title="Оценка-3"></label>
-                                <input type="radio" id="star-2" name="rating" value="2">
-                                <label for="star-2" title="Оценка-2"></label>
-                                <input type="radio" id="star-1" name="rating" value="1">
-                                <label for="star-1" title="Оценка-1"></label>
+                <div class="customer">
+                    <div class="customer__text">Customer Information</div>
+                    <div class="customer__line"></div>
+                        <ul class="footer__customer">
+                            <li class="footer__customer-item">Contact Us</li>
+                            <li class="footer__customer-item">Sale Exclusions</li>
+                            <li class="footer__customer-item">Shipping & Returns</li>
+                            <li class="footer__customer-item">Terms & Conditions</li>
+                            <li class="footer__customer-item">Privacy Policy</li>
+                            <li class="footer__customer-item">Search</li>
+                        </ul>
+                </div>
+                <div class="connect__footer">
+                    <form action="#" method="POST" class="form__elements"></form>
+                        <div class="connect">
+                            <div class="connect__text">Connect</div>
+                            <div class="connect__line"></div>
+                            <div class="footer__mail">
+                                <input class="footer__input" type="text" placeholder="Email">
+                                <button class="footer__button">Join</button>
+                            </div>
+                                <ul class="footer__links">
+                                    <li class="footer__img-item"><img src="/icon/Facebook.svg" alt=""></li>
+                                    <li class="footer__img-item"><img src="/icon/Twitter.svg" alt=""></li>
+                                    <li class="footer__img-item"><img src="/icon/Pinterest.svg" alt=""></li>
+                                    <li class="footer__img-item"><img src="/icon/Instagram.svg" alt=""></li>
+                                </ul>
                             </div>
                         </div>
-                    </fieldset>
-                    <div class="footer_info-text">Copyright © 2018 Dlk • Design Life Kids</div>
-                    <div class="footer_web-text">Web Design — Direct Line Development</div>
+                </div>
+                <div class="line__footer"></div>
+                <div class="footer__box">
+                    <div class="company">
+                        <p class="company__text">Company Rating</p>
+                        <fieldset class="rating">
+                            <legend class="rating__caption"></legend>
+                            <div class="rating-mini">
+                                <div class="rating-area">
+                                    <input type="radio" id="star-5" name="rating" value="5">
+                                    <label for="star-5" title="Оценка «5»"></label>	
+                                    <input type="radio" id="star-4" name="rating" value="4">
+                                    <label for="star-4" title="Оценка «4»"></label>    
+                                    <input type="radio" id="star-3" name="rating" value="3">
+                                    <label for="star-3" title="Оценка «3»"></label>  
+                                    <input type="radio" id="star-2" name="rating" value="2">
+                                    <label for="star-2" title="Оценка «2»"></label>    
+                                    <input type="radio" id="star-1" name="rating" value="1">
+                                    <label for="star-1" title="Оценка «1»"></label>
+                                </div> 
+                            </div>
+                        </fieldset>
+                    <div class="footer__info-text">Copyright © 2018 Dlk • Design Life Kids</div>
+                    <div class="footer__web__text">Web Design — Direct Line Development</div>
                 </div>
             </div>
-       </footer>
+    </footer>
+
 </body>
 </html>
