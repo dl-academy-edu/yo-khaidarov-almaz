@@ -54,7 +54,7 @@
 .banner__img {
     position: absolute;
     left: 448px;
-    top: -89px;
+    top: -115px;
 }
 
 
@@ -281,8 +281,10 @@
     margin-top: 90px;
 }
 
-.delivey__img {
+.delivery__img {
     padding-right: 121px;
+    width: 550px;
+    height: 559px;
 }
 
 .delivery__text {

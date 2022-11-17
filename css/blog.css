@@ -1,3 +1,11 @@
+.header__list-item {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.07px;
+}
+
 .blog__title {
     font-family: 'Montserrat';
     font-style: normal;
